@@ -1,0 +1,39 @@
+<!-- custom error page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ error_name }}</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .title1{
+            font-size: 5em;
+            font-weight: 900;
+            letter-spacing: .2em;
+        }
+        .title2{
+            font-size: 4em;
+            font-weight: 900;
+            color: gray;
+        }
+        body p a{
+            text-decoration: none;
+            font-size: 1.5em;
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <p align="center" class="title1">{{ error_code | upper }}</p>
+    <p align="center" class="title2">{{ error_name | upper }}</p>
+    <br><br>
+    <p align="center"><a href="{{ url_for('index') }}">back to home</a></p>
+</body>
+</html>
