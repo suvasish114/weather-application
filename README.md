@@ -1,6 +1,6 @@
 # weather-application
 
-<img align="center" src="templates/cover1.png"></img>
+<!--<img align="center" src="templates/cover1.png"></img>-->
 
 A simple weather application using <strong>Flask</strong>, which fetch data from <a href="https://openweathermap.org/"><strong>openweathermap.org</strong></a> and render in this application.
 
